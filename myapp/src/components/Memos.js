@@ -24,8 +24,13 @@ return (
     return(
         <table key={i}>
             <tbody>
-                <tr>
-                    <td>{memo.name}</td>
+                <tr> 
+                    <td style={{
+                      backgroundColor: "#96D4D4",
+                      border: "1px solid white",
+                      borderCollapse: "collapse",
+                      padding: "7px",
+                      width: "100px",}} >{memo.name}</td>
                     <td>{memo.message}</td>            
                     <td>{String(memo.timestamp)}</td>
                     <td>{memo.from}</td>
