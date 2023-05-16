@@ -54,14 +54,15 @@ function App() {
     };
     connectwallet();
   },[])
-  //console.log(state);
+  
 
   return (
     <div style={{ backgroundColor: "#EFEFEF", height: "100%" }}>
-     
+      <div style={{textAlign:"center",fontSize:"50px",backgroundColor:"burlywood",boxShadow:"10px"}}>Buy Me Chai</div>
+      
       <p
         className="text-muted lead "
-        style={{ marginTop: "10px", marginLeft: "5px",textAlign:"center",fontSize:"25px",backgroundColor:"lavender" }}
+        style={{  marginLeft: "5px",textAlign:"center",fontSize:"25px",backgroundColor:"lavender" }}
       >
         <small>Connected Account - {account}</small>
       </p>
