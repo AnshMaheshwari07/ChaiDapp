@@ -14,13 +14,13 @@ const Memos=({state})=>{
         
     },[contract])
 
-    //console.log(memos[0]);
+ 
 
 return (
 <>
-<p>Message</p>
+<p style={{textAlign:"center",marginTop:"20px",fontSize:"20px"}}>Messages</p>
 {memos.map((memo,i)=> {
-    console.log("aaa rha h...");
+    
     return(
         <table key={i}>
             <tbody>
@@ -31,9 +31,30 @@ return (
                       borderCollapse: "collapse",
                       padding: "7px",
                       width: "100px",}} >{memo.name}</td>
-                    <td>{memo.message}</td>            
-                    <td>{String(memo.timestamp)}</td>
-                    <td>{memo.from}</td>
+
+
+                    <td style={{
+                      backgroundColor: "whitesmoke",
+                      border: "1px solid white",
+                      borderCollapse: "collapse",
+                      padding: "7px",
+                      width: "100px",}}>{memo.message}</td>  
+
+
+                    <td style={{
+                      backgroundColor: "lightskyblue",
+                      border: "1px solid white",
+                      borderCollapse: "collapse",
+                      padding: "7px",
+                      width: "100px",}}>{new Date(memo.timestamp * 1000).toLocaleString()}</td>
+
+
+                    <td style={{
+                      backgroundColor:"lightpink",
+                      border: "1px solid white",
+                      borderCollapse: "collapse",
+                      padding: "7px",
+                      width: "100px",}}>{memo.from}</td>
                     
                 </tr>
             </tbody>
