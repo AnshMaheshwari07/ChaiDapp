@@ -61,7 +61,7 @@ function App() {
      
       <p
         className="text-muted lead "
-        style={{ marginTop: "10px", marginLeft: "5px" }}
+        style={{ marginTop: "10px", marginLeft: "5px",textAlign:"center",fontSize:"25px",backgroundColor:"lavender" }}
       >
         <small>Connected Account - {account}</small>
       </p>
